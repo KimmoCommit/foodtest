@@ -2,7 +2,7 @@
 layout: post
 title:  "Makkarakebab"
 date:   2015-12-07 21:47:12 +0200
-categories: jekyll update
+categories: jekyll update lol
 tags: [lorem, ipsum, dolor, est, kasvis]
 comments: ["K: cool as cucumber", "H: not so good"]
 description: Nopea ja suhteellisen helppo sekä täyttävä ateria.
