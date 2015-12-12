@@ -23,5 +23,5 @@ markdown: kramdown
 name: foodtest
 permalink: none
 highlighter: true
-source:      _source
-destination: _site
+#source:      _source
+#destination: _site
