@@ -1,0 +1,170 @@
+$post-image-min-width: 300px;
+$post-image-min-height: 400px;
+$post-image-max-width: 100%;
+$post-image-max-height: 100%;
+$post-image-width: 100%;
+$post-image-height: 100%;
+$post-title-font-size: 26px;
+
+$post-header-height: 250px;
+
+.post-navigation{
+	width:100%;
+	//background-color: rgba(240,240,240,0.9);
+	height:35px;
+	margin-bottom:10px;
+	display:flex;
+	flex:1;
+
+	.arrow-back{
+		display:flex;
+		flex:0;
+		align-self:center;
+		cursor: pointer;
+
+		a{	
+			color: $primary-color;
+			display:flex;
+		}
+
+	}
+}
+
+.post-header--wide{
+	width: 100%;
+	margin-bottom: 20px;
+	display:flex;
+	flex-wrap:wrap;
+
+
+
+}
+
+.post-header-comments{
+	display: flex;
+	flex:1;
+	flex-wrap:wrap;
+
+	span{
+		background-color: rgb(234, 234, 234);
+		border-radius:20px 20px 0px;
+		padding:10px;
+		margin-bottom:5px;
+		display:flex;
+		//flex:1;
+		align-self:baseline;
+		align-items:center;
+		justify-content: center;
+	}
+}
+
+.post-header-details{
+	padding-left: 5px;
+	display:flex;
+	flex:1;
+	flex-direction:column;
+
+}
+
+.post-header{
+	width:100%;
+	float:left;
+	height: $post-header-height;
+	display: flex;
+	flex: 1;
+	align-items:center;
+	justify-content:center;
+
+}
+
+.post-divider{
+	float:left;
+}
+
+.post-recipe-head{
+	float:left;
+	margin-top:0;
+}
+
+.post-recipe-ingredients{
+	ul{
+		li{
+			margin-bottom:10px;
+		}
+	}
+}
+
+.recipe-detail{
+	display:flex;
+	align-items: center;
+	margin-right: 10px;
+	background-color:rgba(0,0,0,0.075);
+	border-radius:5px;
+	padding:5px;
+}
+.post-recipe-details{
+	padding:2px;
+	height:100%;
+	$post-recipe-detail-height: 15px;
+	display: flex;
+	flex:1;
+	align-items:flex-end;
+}
+
+.post-title{
+	font-size: 4vw;
+	float:left;
+}
+
+.post-image{
+	float:left;
+}
+
+.post-image-container{
+	float:left;
+}
+
+.post-details-container{
+	float:left;
+	max-width: 250px;
+	margin-right: 20px;
+	margin-bottom:20px;
+}
+
+.post-content-container{
+	border-left: 1vw solid $primary-color;
+	float:left;
+	padding: 1%;
+	margin-left:2%;
+	margin-top: 50px;
+	.chip{
+		margin-bottom:5px;
+	}
+
+
+	.collapsible{
+		border: 0px transparent;
+		box-shadow: 0 0 0 transparent;
+
+
+	}
+
+	.collapsible-header{
+		border-bottom: 1px solid transparent;
+	}
+
+	.collapsible-body{
+		padding: 0px 20px 0px 20px;
+		border-bottom: 1px solid transparent;
+	}
+
+	.collapsible.popout > li.active{
+		border: 0px solid transparent;
+		box-shadow: 0px 0px 0px transparent;
+	}
+
+	.collapsible.popout > li{
+		box-shadow: 0px 0px 0px transparent;	
+	}
+
+}
