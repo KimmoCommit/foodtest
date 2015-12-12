@@ -7,7 +7,7 @@ tags: [lorem, ipsum, dolor, est, kasvis]
 comments: ["K: cool as cucumber", "H: not so good"]
 description: Nopea ja suhteellisen helppo sekä täyttävä ateria.
 time: 15min
-rating: 3.5
+rating: 3.1
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
