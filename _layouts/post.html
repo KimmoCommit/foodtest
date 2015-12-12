@@ -1,0 +1,88 @@
+---
+layout: default
+---
+<div class="post-navigation"><div class="arrow-back"><a href="{{site.baseurl}}/index.html"><i class="material-icons">arrow_back</i></a></div></div>
+<div class="post-content-container">
+	<div class="post-header--wide">
+		<div class="post-image">
+			<img class="post-image materialboxed responsive-img" width="250" src="{% if page.image %}{{site.baseurl}}/media/food/{{page.image}}
+			{% else %}
+			{{site.baseurl}}/media/food/blank.jpg
+			{% endif %}
+			">
+		</div>
+		<div class="post-header-details">
+			<h4>{{page.title}}</h4>
+			<div class="post-header-comments">
+				{% for comment in page.comments %}
+				<span class="comment--italic" style="margin-right:15px">{{comment}}</span>
+				{% endfor %}
+			</div>
+			<div class="post-recipe-details">
+				{% if page.time %}
+				<div class="recipe-detail"><i class="material-icons">access_time</i><span>{{page.time}}</span></div>
+				{% endif %}
+				{% if page.rating %}
+				<div class="recipe-detail"><i class="material-icons">grade</i><span>{{page.rating}}</span></div>
+				{% endif %}
+				{% if page.portions %}
+				<div class="recipe-detail"><i class="material-icons">local_dining</i><span>{{page.portions}}</span></div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+	<ul class="collapsible" data-collapsible="expandable">
+		{% if page.ingredients %}
+		<li>
+			<div class="collapsible-header"><h5>Valmistusaineet</h5></div>
+			<div class="collapsible-body">
+				<div class="post-recipe-ingredients">
+					<ul>
+						{% for ingredient in page.ingredients %}
+						<li>{{ingredient}}</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</li>
+		{% endif %}
+		{% if content %}
+		<li>
+			<div class="collapsible-header"><h5>Valmistusohjeet</h5></div>
+			<div class="collapsible-body">
+				<div class="post-recipe-instructions">
+					<!--{{ page.instructions }}-->
+					{{content | remove: '<p>' | remove: '</p>' }}
+				</div>
+			</div>
+		</li>
+		{% endif %}
+		{% if page.tags %}
+		<li>
+			<div class="collapsible-header"><h5>Tagit</h5></div>
+			<div class="collapsible-body">
+				{% for tag in page.tags %}
+				<span class="chip">{{tag}}</span>
+				{% endfor %}
+			</div>
+		</li>
+		{% endif %}
+		{% if page.sources %}
+		<li>
+			<div class="collapsible-header"><h5>Lähteet</h5></div>
+			<div class="collapsible-body">
+			<ul>
+				{% for source in page.sources %}
+					<li>{{source}}</li>	
+				{% endfor %}
+			</ul>
+			</div>
+		</li>
+		{% endif %}
+	</ul>
+</div>
+
+
+
+
