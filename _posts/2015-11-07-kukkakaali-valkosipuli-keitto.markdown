@@ -26,10 +26,12 @@ ingredients:
   - 1tl timjamia
   - 100g maustamatonta tuorejuustoa
   - 2d kuohukermaa
+  - herkullista leipää
 portions: 4
 sources: 
   - Yhteishyvä ruoka lokakuu 2014
 published: true
 ---
+
 
 Kuori ja hienonna valkosipulinkynnet ja sipuli. Kuullota sipuleita öljyssä kattilassa miedolla lämmöllä noin 10 minuuttia. Pese ja paloittele kukkakaali pieniksi kukinnoiksi. Lisää kukkakaalit kattilaan veden, liemikuution ja timjamin kanssa. Keitä hiljalleen kunnes kukkakaali on täysin kypsää. Lisää kattilaan tuorejuusto ja kerma ja keitä muutama minuutti. Soseuta sauvasekoittimella kuohkeaksi. Tarjoile leivän kanssa.
