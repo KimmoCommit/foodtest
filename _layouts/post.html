@@ -19,7 +19,7 @@ layout: default
 				<span class="comment--italic" style="margin-right:15px">{{comment}}</span>
 				{% endfor %}
 			</div>
-			<!--<div class="post-recipe-details">
+			<div class="post-recipe-details">
 				{% if page.time %}
 				<div class="recipe-detail"><i class="material-icons">access_time</i><span>{{page.time}}</span></div>
 				{% endif %}
@@ -29,7 +29,7 @@ layout: default
 				{% if page.portions %}
 				<div class="recipe-detail"><i class="material-icons">local_dining</i><span>{{page.portions}}</span></div>
 				{% endif %}
-			</div>-->
+			</div>
 		</div>
 	</div>
 
@@ -71,54 +71,7 @@ layout: default
 			</div>
 		</div>
 	</div>
-	<!--<ul class="collapsible" data-collapsible="expandable">
-		{% if page.ingredients %}
-		<li>
-			<div class="collapsible-header"><h5>Valmistusaineet</h5></div>
-			<div class="collapsible-body">
-				<div class="post-recipe-ingredients">
-					<ul>
-						{% for ingredient in page.ingredients %}
-						<li>{{ingredient}}</li>
-						{% endfor %}
-					</ul>
-				</div>
-			</div>
-		</li>
-		{% endif %}
-		{% if content %}
-		<li>
-			<div class="collapsible-header"><h5>Valmistusohjeet</h5></div>
-			<div class="collapsible-body">
-				<div class="post-recipe-instructions">
-					{{content | remove: '<p>' | remove: '</p>' }}
-				</div>
-			</div>
-		</li>
-		{% endif %}
-		{% if page.tags %}
-		<li>
-			<div class="collapsible-header"><h5>Tagit</h5></div>
-			<div class="collapsible-body">
-				{% for tag in page.tags %}
-				<span class="chip">{{tag}}</span>
-				{% endfor %}
-			</div>
-		</li>
-		{% endif %}
-		{% if page.sources %}
-		<li>
-			<div class="collapsible-header"><h5>Lähteet</h5></div>
-			<div class="collapsible-body">
-			<ul>
-				{% for source in page.sources %}
-					<li>{{source}}</li>	
-				{% endfor %}
-			</ul>
-			</div>
-		</li>
-		{% endif %}
-	</ul>-->
+
 </div>
 
 
