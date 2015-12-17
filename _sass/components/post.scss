@@ -8,6 +8,27 @@ $post-title-font-size: 26px;
 
 $post-header-height: 250px;
 
+
+
+
+
+.post-sub-container{
+	min-height: 50vh;
+	width:70%;
+	padding:20px;
+	float:left;
+
+}
+
+.post-banner{
+	background-color: $primary-color-light;
+	height: 120px;
+	width: 100%;
+	float:left;
+}
+
+
+
 .post-navigation{
 	width:100%;
 	//background-color: rgba(240,240,240,0.9);
@@ -28,6 +49,7 @@ $post-header-height: 250px;
 		}
 
 	}
+	
 }
 
 .post-header--wide{
@@ -35,19 +57,19 @@ $post-header-height: 250px;
 	margin-bottom: 20px;
 	display:flex;
 	flex-wrap:wrap;
-
+	margin-top:-90px;
 
 
 }
 
 .post-header-comments{
 	display: flex;
-	flex:1;
 	flex-wrap:wrap;
 
 	span{
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 		background-color: rgb(234, 234, 234);
-		border-radius:20px 20px 0px;
+		border-radius:20px 20px 20px 0;
 		padding:10px;
 		margin-bottom:5px;
 		display:flex;
@@ -61,8 +83,13 @@ $post-header-height: 250px;
 .post-header-details{
 	padding-left: 5px;
 	display:flex;
-	//flex:1;
+	justify-content: flex-start;
 	flex-direction:column;
+
+	h4{
+		color:white;
+		text-shadow:-1px 1px 1px rgba($primary-color-dark,0.6);
+	}
 
 }
 
@@ -87,6 +114,10 @@ $post-header-height: 250px;
 }
 
 .post-recipe-ingredients{
+	margin-right: 20px;
+	width:250px;
+	float:left;
+	padding:20px;
 	ul{
 		li{
 			margin-bottom:10px;
@@ -118,10 +149,21 @@ $post-header-height: 250px;
 
 .post-image{
 	float:left;
+	background-color:white;
+
+	.material-placeholder{
+		float:left;
+		border:3px solid white;
+	}
+
+	img{
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	}
 }
 
 .post-image-container{
 	float:left;
+
 }
 
 .post-details-container{
@@ -132,11 +174,10 @@ $post-header-height: 250px;
 }
 
 .post-content-container{
-	border-left: 1vw solid $primary-color;
+	width:100%;
 	float:left;
 	padding: 1%;
-	margin-left:2%;
-	margin-top: 50px;
+	//margin-top: 50px;
 	.chip{
 		margin-bottom:5px;
 	}
@@ -168,3 +209,13 @@ $post-header-height: 250px;
 	}
 
 }
+/*
+@media screen and (max-width:661px) {
+	.post-header-details{
+	h4{
+		color:rgba(black,0.8);
+		text-shadow:-1px 1px 1px rgba($primary-color-dark,0.0);
+	}
+
+}
+}*/

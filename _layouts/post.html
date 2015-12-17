@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<div class="post-navigation"><div class="arrow-back"><a href="{{site.baseurl}}/index.html"><i class="material-icons">arrow_back</i></a></div></div>
+<!--<div class="post-navigation"><div class="arrow-back"><a href="{{site.baseurl}}/index.html"><i class="material-icons">arrow_back</i></a></div></div>
+--><div class="post-banner"></div>
 <div class="post-content-container">
 	<div class="post-header--wide">
 		<div class="post-image">
@@ -18,7 +19,7 @@ layout: default
 				<span class="comment--italic" style="margin-right:15px">{{comment}}</span>
 				{% endfor %}
 			</div>
-			<div class="post-recipe-details">
+			<!--<div class="post-recipe-details">
 				{% if page.time %}
 				<div class="recipe-detail"><i class="material-icons">access_time</i><span>{{page.time}}</span></div>
 				{% endif %}
@@ -28,11 +29,49 @@ layout: default
 				{% if page.portions %}
 				<div class="recipe-detail"><i class="material-icons">local_dining</i><span>{{page.portions}}</span></div>
 				{% endif %}
-			</div>
+			</div>-->
 		</div>
 	</div>
 
-	<ul class="collapsible" data-collapsible="expandable">
+	<div class="row">
+		{% if page.ingredients %}
+			<div class="card post-recipe-ingredients">
+					<ul>
+						{% for ingredient in page.ingredients %}
+						<li>{{ingredient}}</li>
+						{% endfor %}
+					</ul>
+				</div>
+		{% endif %}
+			<div class="post-sub-container">
+				{% if content %}
+				<div class="row">
+					<h5>Valmistusohjeet</h5>
+					<div class="post-recipe-instructions">
+						{{content | remove: '<p>' | remove: '</p>' }}
+					</div>
+				</div>
+				{% endif %}
+				{% if page.tags %}
+				<div class="row">
+					<h5>Tagit</h5>
+					{% for tag in page.tags %}
+					<span class="chip">{{tag}}</span>
+					{% endfor %}
+				</div>
+				{% endif %}
+				{% if page.sources %}
+				<div class="row">
+					<h5>Lähteet</h5>
+					{% for source in page.sources %}
+						<li>{{source}}</li>	
+					{% endfor %}
+				</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	<!--<ul class="collapsible" data-collapsible="expandable">
 		{% if page.ingredients %}
 		<li>
 			<div class="collapsible-header"><h5>Valmistusaineet</h5></div>
@@ -52,7 +91,6 @@ layout: default
 			<div class="collapsible-header"><h5>Valmistusohjeet</h5></div>
 			<div class="collapsible-body">
 				<div class="post-recipe-instructions">
-					<!--{{ page.instructions }}-->
 					{{content | remove: '<p>' | remove: '</p>' }}
 				</div>
 			</div>
@@ -80,7 +118,7 @@ layout: default
 			</div>
 		</li>
 		{% endif %}
-	</ul>
+	</ul>-->
 </div>
 
 

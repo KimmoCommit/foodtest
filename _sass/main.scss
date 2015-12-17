@@ -12,11 +12,16 @@
 @import "components/post";
 
 .content-container{
+	background-color:rgba(0,0,0,0.02);
 	//margin: auto 5% auto 5%;
 }
 
 .recipes-content-container{
-	margin: auto 5% auto 5%;
+	//margin: auto 5% auto 5%;
+}
+
+body {
+	border-top:2px solid $primary-color;
 }
 
 /*@media screen and (max-width:700px) {
